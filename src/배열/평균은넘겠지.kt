@@ -24,5 +24,6 @@ fun main() {
         }
         val stu = String.format("%.3f", (count.toDouble() / human.toDouble()) * 100)
         println("$stu%")
+
     }
 }
