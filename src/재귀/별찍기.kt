@@ -5,7 +5,7 @@ lateinit var arr : Array<Array<Char>>
 fun main() {
     val n = readLine()!!.toInt()
     val builder = StringBuilder()
-    arr = Array(n) { Array(n, { ' ' }) }
+    arr = Array(n) { Array(n) { ' ' } }
     star(n,0,0)
     for (i in 0 until n){
         for (j in 0 until n){
