@@ -1,14 +1,11 @@
 package 재귀
 
-import java.lang.StringBuilder
-
-lateinit var sb:StringBuilder
+import kotlin.math.pow
 
 fun main() {
     val n = readLine()!!.toInt()
-    sb.append((Math.pow(2.0, n.toDouble()) - 1).toInt()).append('\n')
+    println((2.0.pow(n.toDouble()) -1).toInt())
     hanoi(n,1,2,3)
-    println(sb)
 }
 
 fun hanoi(n:Int, start:Int, mid:Int, to:Int){
