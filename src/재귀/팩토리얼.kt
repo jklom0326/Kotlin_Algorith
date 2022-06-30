@@ -2,9 +2,7 @@ package 재귀
 
 fun main() {
     val n = readLine()!!.toInt()
-    val result : Int = recursion(n)
-
-    println(result)
+    println(recursion(n))
 }
 
 fun recursion(n: Int): Int{
