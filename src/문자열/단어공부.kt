@@ -3,8 +3,9 @@ package 문자열
 fun main() {
     val n = readLine()!!.toString()
     val arr = mutableListOf<Char>()
+    arr[1].isUpperCase()
     for (i in n.indices) {
-        arr.add(n[i].toUpperCase())
+        arr.add(n[i].uppercaseChar())
     }
     val map = mutableMapOf<Char, Int>()
     arr.forEach {
