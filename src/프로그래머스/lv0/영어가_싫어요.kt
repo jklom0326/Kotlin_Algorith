@@ -4,10 +4,9 @@ fun hateEnglish(numbers: String): Long {
     var number = numbers
     var numstr = arrayOf("zero","one","two","three","four","five","six","seven","eight","nine")
     for (i in 0..9){
-
-        number = number.replace(numstr,i.toString())
+        number = number.replace(numstr[i].toRegex(),i.toString())
     }
-    return answer
+    return number.toLong()
 }
 fun main() {
     println(hateEnglish("onetwothreefourfivesixseveneightnine"))
