@@ -8,7 +8,7 @@ fun solution4(word: String): String {
 }
 
 fun reverseUpper(word: String): String {
-    var reverseUpper = word.map { it.toInt() }.toMutableList()
+    var reverseUpper = word.map { it.code }.toMutableList()
     for (i in 0 until word.length) {
         if (reverseUpper[i].toChar() in 'A'..'Z') {
             reverseUpper[i] = ('A'.code + 'Z'.code) - reverseUpper[i]
@@ -18,7 +18,7 @@ fun reverseUpper(word: String): String {
 }
 
 fun reverseLower(word: String): String {
-    var reverseLower = word.map { it.toInt() }.toMutableList()
+    var reverseLower = word.map { it.code }.toMutableList()
     for (i in 0 until word.length) {
         if (reverseLower[i].toChar() in 'a'..'z') {
             reverseLower[i] = ('a'.code + 'z'.code) - reverseLower[i]

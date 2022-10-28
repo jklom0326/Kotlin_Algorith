@@ -33,8 +33,8 @@ private fun exceptions(pobi: List<Int>, crong: List<Int>): Boolean {
         pobi[1] % 2 != 0 -> return false
         crong[0] % 2 == 0 -> return false
         crong[1] % 2 != 0 -> return false
-        // 페이지가 연속이 아닐 때
 
+        // 페이지가 연속이 아닐 때
         pobi[0] + 1 != pobi[1] -> return false
         crong[0] + 1 != crong[1] -> return false
 
