@@ -7,6 +7,7 @@ fun safetyzone(board: Array<IntArray>): Int {
             safe == 0
         })
     }
+
     return answer
 }
 
