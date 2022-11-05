@@ -37,10 +37,8 @@ fun main() {
             listOf("jm@email.com", "제이엠슨닐"),
             listOf("jason@email.com", "제이슨"),
             listOf("woniee@email.com", "워니"),
-//            listOf("wonieee@email.com", "아이워니"),
             listOf("mj@email.com", "엠제이"),
             listOf("nowm@email.com", "이제엠"),
-//            listOf("nowm@email.ccom", "이제엠")
         )
     )
 }
