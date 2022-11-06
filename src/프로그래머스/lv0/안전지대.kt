@@ -10,6 +10,7 @@ fun safetyzone(board: Array<IntArray>): Int {
     return answer
 }
 
+
 fun main() {
     safetyzone(
         arrayOf(
