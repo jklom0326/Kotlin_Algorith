@@ -4,7 +4,6 @@ fun game(order: Int): Int {
         println(tsn)
         return 1
 }
-
 fun main() {
     println(game(	2356789))
 }
