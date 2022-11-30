@@ -1,11 +1,9 @@
 package 프로그래머스.lv0
 
-fun safetyzone(board: Array<IntArray>): Int {
+fun safetyzone(board: Array<List<Int>>): Int {
     var answer: Int = 0
     board.forEach {
-       println( it.count() { safe ->
-            safe == 0
-        })
+       println(it)
     }
     return answer
 }
@@ -13,11 +11,11 @@ fun safetyzone(board: Array<IntArray>): Int {
 fun main() {
     safetyzone(
         arrayOf(
-            intArrayOf(0, 0, 0, 0, 0),
-            intArrayOf(0, 0, 0, 0, 0),
-            intArrayOf(0, 0, 0, 0, 0),
-            intArrayOf(0, 0, 1, 0, 0),
-            intArrayOf(0, 0, 0, 0, 0)
+            listOf(0, 0, 0, 0, 0),
+            listOf(0, 0, 0, 0, 0),
+            listOf(0, 0, 0, 0, 0),
+            listOf(0, 0, 1, 0, 0),
+            listOf(0, 0, 0, 0, 0)
         )
     )
 }
