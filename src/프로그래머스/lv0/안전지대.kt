@@ -1,6 +1,6 @@
 package 프로그래머스.lv0
 
-fun safetyzone(board: Array<List<Int>>): Int {
+fun safetyZone(board: Array<List<Int>>): Int {
     var answer: Int = 0
     board.forEach {
        println(it)
@@ -8,7 +8,7 @@ fun safetyzone(board: Array<List<Int>>): Int {
     return answer
 }
 fun main() {
-    safetyzone(
+    safetyZone(
         arrayOf(
             listOf(0, 0, 0, 0, 0),
             listOf(0, 0, 0, 0, 0),
