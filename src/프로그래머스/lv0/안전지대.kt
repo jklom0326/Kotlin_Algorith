@@ -7,6 +7,7 @@ fun safetyZone(board: Array<List<Int>>): Int {
     }
     return answer
 }
+
 fun main() {
     safetyZone(
         arrayOf(
