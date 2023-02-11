@@ -7,6 +7,7 @@ fun takeMiddle(s: String): String {
     return s[(s.length / 2)].toString()
 }
 
+
 fun main() {
     println(takeMiddle("abcde"))
     println(takeMiddle("qwer"))
