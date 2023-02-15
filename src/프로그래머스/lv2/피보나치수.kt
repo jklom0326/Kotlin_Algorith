@@ -9,6 +9,7 @@ fun fiboLv2(n: Int): Int {
     }
     return answer[n]
 }
+
 fun main() {
     println(fiboLv2(3))
     println(fiboLv2(5))
