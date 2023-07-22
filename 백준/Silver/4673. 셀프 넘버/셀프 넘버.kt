@@ -1,23 +1,20 @@
 fun main() {
-    val mutarr = mutableListOf<Int>()
-    for (i in 1 until 10000) {
-        mutarr.add(selfnumber(i))
+    val arr = mutableListOf<Int>()
+
+    repeat(10000) {
+        var result = it + 1
+        var div = it + 1
+        while (div > 0) {
+            result += div % 10
+            div /= 10
+        }
+        arr.add(result)
     }
-    for (j in 1 until 10000) {
-        if (mutarr.contains(j)){
+    for (i in 1 until 10000) {
+        if (arr.contains(i)){
             continue
-        }else{
-            println(j)
+        } else {
+            println(i)
         }
     }
-}
-
-fun selfnumber(i: Int): Int {
-    var result = i
-    var div = i
-    while (div > 0) {
-        result += div % 10
-        div /= 10
-    }
-    return result
 }
