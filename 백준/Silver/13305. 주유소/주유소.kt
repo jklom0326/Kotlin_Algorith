@@ -1,16 +1,15 @@
 fun main() {
     val n = readln().toInt()
-    val road = readln().split(" ").map { it.toInt() }
-    val price = readln().split(" ").map { it.toInt() }
+    val road = readln().split(" ").map { it.toLong() }
+    val price = readln().split(" ").map { it.toLong() }
 
-    var sum = 0
+    var sum = 0L
     var min = price[0]
 
     for (i in road.indices) {
-        if (price[i] < min)
-            {
-                min = price[i]
-            }
+        if (price[i] < min) {
+            min = price[i]
+        }
         sum += min * road[i]
     }
 
