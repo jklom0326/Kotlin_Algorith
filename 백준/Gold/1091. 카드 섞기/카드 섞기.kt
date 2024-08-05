@@ -15,7 +15,7 @@ fun main() {
 
         for (i in 0 until n) card[i] = temp[s[i]]
 
-        if (count > 200000) {
+        if (count > 120119) {
             println(-1)
             return
         }
